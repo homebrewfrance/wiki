@@ -126,9 +126,9 @@
 								<pre></pre>
 				<h4>Prérequis</h4>
 				<hr class="hrverysmall" color="white" align=center>
-				<p>Vérifiez la compatibilité de votre Nintendo Switch avec la faille Tegra RCM avec le tableau ci-dessous. Pour vérifier votre version, vérifiez votre numéro de série de Nintendo Switch en vous référant à <a href="https://hbf-files.github.io/nx_check.png">cette image</a>.</p>
+				<p>Vérifiez la compatibilité de votre Nintendo Switch avec la faille Tegra RCM en entrant votre numéro de série ci-dessous. Pour vérifier votre version, vérifiez votre numéro de série de Nintendo Switch en vous référant à <a href="https://hbf-files.github.io/nx_check.png">cette image</a>.</p>
 <center>
-<table>
+<!--<table>
     <thead>
         <tr>
             <th colspan="1">XAJ1</th><th colspan="1">XAJ4</th><th colspan="1">XAJ7</th><th colspan="1">XAK</th>
@@ -152,7 +152,103 @@
 			<td colspan="2">700001 - 700173</td>
         </tr>
     </tbody>
-</table>
+</table>-->
+<form>
+      <label>Entrez votre numéro de série</label>
+      <select class="xawselect" name="xawSelector">
+        <option value="XAW1">XAW1</option>
+        <option value="XAW7">XAW4</option>
+		<option value="XAW7">XAW7</option>
+		<option value="XAW7">XAJ1</option>
+        <option value="XAW7">XAJ4</option>
+        <option value="XAW7">XAJ7</option>
+        <option value="XAW7">XKW1</option>
+        <option value="XAW7">XKJ1</option>
+        <option value="XAW7">XJW1</option>
+        <option value="XAW7">XWW1</option>
+      </select>
+      <input class="input" type="number" name="numberInput" required  placeholder="0046000000">
+      <input class="submit" type="submit" value="Vérifier">
+    </form>
+
+    <script type="text/javascript">
+      const form = document.querySelector('form');
+      form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const numberInput = document.querySelector('input[name="numberInput"]').value;
+          const xawSelector = document.querySelector('select[name="xawSelector"]').value;
+
+          if (xawSelector === "XAW1") {
+            if (numberInput >= 0000000000 && numberInput <= 0074000000) {
+              alert("Votre console n'est pas patchée");
+            } else if (numberInput >= 0074000000 && numberInput <= 0120000000) {
+              alert("Votre console est potentiellement patchée");
+			} else if (numberInput >= 0120000000) {
+			  alert("Votre console est patchée")
+            } else {
+              alert("Numéro de série invalide");
+            }
+          }
+		  if (xawSelector === "XAW4") {
+            if (numberInput >= 0000000000 && numberInput <= 0011000000) {
+              alert("Votre console n'est pas patchée");
+            } else if (numberInput >= 0011000000 && numberInput <= 0012000000) {
+              alert("Votre console est potentiellement patchée");
+			} else if (numberInput >= 0012000000) {
+			  alert("Votre console est patchée")
+            } else {
+              alert("Numéro de série invalide");
+            }
+		  }
+		  if (xawSelector === "XAW7") {
+            if (numberInput >= 0000000000 && numberInput <= 0017800000) {
+              alert("Votre console n'est pas patchée");
+            } else if (numberInput >= 0017800000 && numberInput <= 0030000000) {
+              alert("Votre console est potentiellement patchée");
+			} else if (numberInput >= 0030000000) {
+			  alert("Votre console est patchée")
+            } else {
+              alert("Numéro de série invalide");
+            }
+		  }
+		  if (xawSelector === "XAJ1") {
+            if (numberInput >= 0000000000 && numberInput <= 0020000000) {
+              alert("Votre console n'est pas patchée");
+            } else if (numberInput >= 0020000000 && numberInput <= 0030000000) {
+              alert("Votre console est potentiellement patchée");
+			} else if (numberInput >= 0030000000) {
+			  alert("Votre console est patchée")
+            } else {
+              alert("Numéro de série invalide");
+            }
+		  }
+		  if (xawSelector === "XAJ4") {
+            if (numberInput >= 0000000000 && numberInput <= 0046000000) {
+              alert("Votre console n'est pas patchée");
+            } else if (numberInput >= 0046000000 && numberInput <= 0060000000) {
+              alert("Votre console est potentiellement patchée");
+			} else if (numberInput >= 0060000000) {
+			  alert("Votre console est patchée")
+            } else {
+              alert("Numéro de série invalide");
+            }
+		  }
+		  if (xawSelector === "XAJ7") {
+            if (numberInput >= 0000000000 && numberInput <= 0040000000) {
+              alert("Votre console n'est pas patchée");
+            } else if (numberInput >= 0040000000 && numberInput <= 0050000000) {
+              alert("Votre console est potentiellement patchée");
+			} else if (numberInput >= 0050000000) {
+			  alert("Votre console est patchée")
+            } else {
+              alert("Numéro de série invalide");
+            }
+		  }
+          else if (xawSelector === "") {
+            alert("Not supported");
+          }
+      });
+    </script>
 </center>
 		<pre></pre>
 				<h4>Avec un RCM Loader</h4>
