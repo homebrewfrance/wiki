@@ -69,11 +69,11 @@
 		</div>
 			<div class="page">
 				<pre></pre>
-		<h2 class="top">Mettre à jour Atmosphère / Premier hack</h2>
+				<center><h2 class="top">Mettre à jour Atmosphère / Premier hack</h2></center>
 		<hr class="hrsmall" color="white" align=center>
 				<pre></pre>
-				<h4>Prérequis</h4>
-				<hr class="hrverysmall" color="white" align=center>
+				<center><h4 class="center">Prérequis</h4></center>
+				<hr class="hr-title" color="white" align=center>
 		<p>Un carte micro SD de minimum 8GB. (privilégiez les grandes marques telles que <strong>Sandisk</strong>, <strong>PNY</strong>, <strong>Samsung</strong>, etc.</p>
 				<hr>
 				<pre></pre>
@@ -83,8 +83,8 @@
 			<p>Extrayez l'archive à la racine de la carte micro SD.</p>
 				<p>Attention à ne pas formater votre emuNAND ni les dossiers <code>emuMMC</code> et <code>Nintendo</code>.</p>
 				<pre></pre>
-				<h2>Simuler un JIG et mode RCM</h2>
-				<hr class="hrsmall" color="white" align=center>
+				<center><h2 class="center">Simuler un JIG et mode RCM</h2></center>
+				<hr class="hr-title" color="white" align=center>
 				<pre></pre>
 				<p>On va faire contact entre les broches n°9 et n°10 du joycon droit (R) à l'aide d'un morceau de feuille d'aluminium d'1 millimiètre d'épaisseur.</p>
 				<hr>
@@ -121,11 +121,11 @@
 			<div class="desc">Ruban adhésif à bien appliquer.</div>
 			</div>
 
-				<h2>Injecter le payload Hekate</h2>
-				<hr class="hrsmall" color="white" align=center>
+				<center><h2 class="center">Injecter le payload Hekate</h2></center>
+				<hr class="hr-title" color="white" align=center>
 								<pre></pre>
-				<h4>Prérequis</h4>
-				<hr class="hrverysmall" color="white" align=center>
+				<center><h4 class="center">Prérequis</h4></center>
+				<hr class="hr-title" color="white" align=center>
 				<p>Vérifiez la compatibilité de votre Nintendo Switch avec la faille Tegra RCM en entrant votre numéro de série ci-dessous. Pour vérifier votre version, vérifiez votre numéro de série de Nintendo Switch en vous référant à <a href="https://hbf-files.github.io/nx_check.png">cette image</a>.</p>
 <center>
 <!--<table>
@@ -153,8 +153,7 @@
         </tr>
     </tbody>
 </table>-->
-<form>
-      <label>Entrez votre numéro de série</label>
+<center><form>
       <select class="xawselect" name="xawSelector">
         <option value="XAW1">XAW1</option>
         <option value="XAW7">XAW4</option>
@@ -169,7 +168,7 @@
       </select>
       <input class="input" type="number" name="numberInput" required  placeholder="0046000000">
       <input class="submit" type="submit" value="Vérifier">
-    </form>
+</form></center>
 
     <script type="text/javascript">
       const form = document.querySelector('form');
@@ -251,8 +250,8 @@
     </script>
 </center>
 		<pre></pre>
-				<h4>Avec un RCM Loader</h4>
-				<hr class="hrverysmall" color="white" align=center>
+				<center><h4 class="center">Avec un RCM Loader</h4></center>
+				<hr class="hr-title" color="white" align=center>
 				<p><strong>1.</strong> Entrer en mode RCM :</p>
 				<ul>
 					<li>Placer le jig (contacts orientés vers le bas) dans le rail du joycon droit, la carte micro SD dans la console (avec un pack correctement paramétré : DNS de blocage et INCOGNITO activés).</li>
@@ -266,8 +265,8 @@
 					<li>Insérer le RCM Loader dans le port USB-C de la console.</li>
 					<li>La Swicth démarrera sous Hekate, régler à date et heure correcte puis sauvegarder.</li>
 				</ul>
-				<h4>Avec un PC relié à la console</h4>
-				<hr class="hrverysmall" color="white" align=center>
+				<center><h4 class="center">Avec un PC relié à la console</h4></center>
+				<hr class="hr-title" color="white" align=center>
 				<h5 class="os"><img src="https://hbf-files.github.io/windows.png" width="20" height="20">&ensp; Windows</h5>
 				<ul style="list-style-type:none;">
 					<li>Télécharger la <a href="https://github.com/eliboa/TegraRcmGUI/releases/latest">version portable de TegraRcmGui</a> et la décompresser sur son PC.</li>
@@ -282,14 +281,14 @@
 				<p>Dans le logiciel <code>TegraRcmGUI</code> parcourir le PC pour sélectionner le payload <code>hekate_ctcaer_X.Y.Z.bin</code> placé dans le dossier <code>TegraRcmGUI</code> puis cliquer sur "Inject payload".</p>
 				<p>La Switch va démarrer sur Hekate, régler à heure et date correctes puis sauvegarder.</p>
 				<pre></pre>
-				<h2>Créer une emuNAND par partition sous Hekate (carte SD de bonne marque (Sandisk) conseillée)</h2>
-				<hr class="hrsmall" color="white" align=center>
+				<center><h2 class="center">Créer une emuNAND par partition sous Hekate (carte SD de bonne marque (Sandisk) conseillée)</h2></center>
+				<hr class="hr-title" color="white" align=center>
 				<a href="https://docs.google.com/document/d/1A1gRl-W52LLNXe8XygiIM0bZgiPxjI0RVbtpA_IoKmk/edit"><button type="button" class="btn btn-outline-light btn-lg btn-block">Tutoriel écrit disponible ici.</button></a>
 				<pre></pre>
-				<h2>Mise à jour via Daybreak</h2>
-				<hr class="hrsmall" color="white" align=center>
-				<h4>Prérequis</h4>
-				<hr class="hrverysmall" color="white" align=center>
+				<center><h2 class="center">Mise à jour via Daybreak</h2></center>
+				<hr class="hr-title" color="white" align=center>
+				<center><h4 class="center">Prérequis</h4></center>
+				<hr class="hr-title" color="white" align=center>
 				<p>Avoir un pack CFW à jour compatible avec le dernier firmware de Nintendo. (Le pack conseillé est celui de Zoria disponible sur <a href="https://homebrewfrance.github.io/packs/">la page des packs</a>).</p>
 				<hr>
 				<h5 class="os"><img src="https://hbf-files.github.io/macos.png" width="20" height="20">&ensp; Sur Mac</h5>
@@ -316,10 +315,10 @@
 				<p><strong>7.</strong> Aller dans "Paramètres" -> "Mise à jour" pour vérifier que le console est bien en 14.1.2 avec un <strong>E</strong> ou un <strong>S</strong> à la fin.</p>
 				<center><img src="https://hbf-files.github.io/ns_2.png" width="797" height="339"></center>
 								<pre></pre>
-				<h2>Réinitialiser son emuNAND via Daybreak</h2>
-				<hr class="hrsmall" color="white" align=center>
-				<h4>Prérequis précédents</h4>
-				<hr class="hrverysmall" color="white" align=center>
+				<center><h2 class="center">Réinitialiser son emuNAND via Daybreak</h2></center>
+				<hr class="hr-title" color="white" align=center>
+				<center><h4 class="center">Prérequis précédents</h4></center>
+				<hr class="hr-title" color="white" align=center>
 				<p>Perte de tous ses jeux et sauvegardes de l'emuNAND mais on repart sur une base saine.</p>
 				<hr>
 				<p><strong>1.</strong> Récupérer les sauvegardes de son emuNAND (via DBI ou JKSV) que l'on pourra restaurer dans l'emuNAND par la suite.</p>
